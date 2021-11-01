@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtViewQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Guess the artist? "
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageQuestion"
+            android:layout_width="262dp"
+            android:layout_height="229dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/earring_jan" />
+
+        <RadioGroup
+            android:id="@+id/optionsGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/rdbtnOption1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RadioButton"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/rdbtnOption2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RadioButton"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/rdbtnOption3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RadioButton"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/rdbtnOption4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RadioButton"
+                android:textSize="20dp" />
+
+        </RadioGroup>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#2196F3"
+                android:gravity="center"
+                android:text="Next"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/btnAnswer"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <Button
+                android:id="@+id/btnAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#009688"
+                android:enabled="true"
+                android:text="Submit"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="16dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
